@@ -106,7 +106,7 @@ height: 100%">
     <!--style-->
     <style>
         .schedule {
-            width: 240px;
+            width: 340px;
             /*may be different*/
             padding: 20px;
             background: #F9FFF5;
@@ -148,7 +148,7 @@ height: 100%">
             -ms-align-items: center;
             align-items: center;
             width: 100%;
-            max-height: 36px;
+            height: 50px;
             /*may be different*/
             margin-bottom: 15px;
         }
@@ -156,6 +156,7 @@ height: 100%">
         .event-time {
             color: #353535;
             flex: 0 0 40px;
+            height: 100%;
         }
 
         .event-time-start,
@@ -168,12 +169,12 @@ height: 100%">
             font-style: normal;
             font-weight: bold;
             font-size: 14px;
-            line-height: 18px;
+            line-height: 30px;
         }
 
         .schedule-event-content {
             padding-left: 12px;
-            max-width: 185px;
+            max-width: 300px;
             color: #353535;
             font-family: 'Rubik', sans-serif;
             flex: auto;
@@ -185,10 +186,10 @@ height: 100%">
         }
 
         .schedule-event-name {
+            font-weight: bold;
             font-style: normal;
-            font-weight: 500;
-            font-size: 9px;
-            line-height: 12px;
+            font-size: 14px;
+            line-height: 16px;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
@@ -197,8 +198,8 @@ height: 100%">
         .schedule-event-description {
             font-style: normal;
             font-weight: normal;
-            font-size: 9px;
-            line-height: 12px;
+            font-size: 12px;
+            line-height: 14px;
             height: 20px;
             /*may be different*/
         }
@@ -206,12 +207,13 @@ height: 100%">
         .schedule-event-group {
             font-family: 'Rubik', sans-serif;
             color: #353535;
-            flex: 0 0 12px;
+            flex: 0 0 16px;
             padding: 3px;
             font-style: normal;
             font-weight: bold;
-            font-size: 9px;
-            line-height: 12px;
+            font-size: 11px;
+            line-height: 20px;
+            padding: 10px 0 10px 0;
             writing-mode: vertical-rl;
         }
 
@@ -229,6 +231,7 @@ height: 100%">
         }
 
         .add-schedule-event:hover{
+            cursor: pointer;
             border: 2px solid forestgreen;
             color: forestgreen;
         }
