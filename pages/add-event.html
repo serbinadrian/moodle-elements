@@ -10,7 +10,7 @@ height: 100%">
     <!--BLOCK-->
     <div class="add-event">
         <div class="add-event-title">
-            Добавить событие
+            <input type="text" placeholder="Введите название события">
         </div>
         <div class="event-types">
             <div class="event-type">
@@ -160,6 +160,21 @@ height: 100%">
             border-bottom: 1px solid #BFBFBF;
         }
 
+        .add-event-title input{
+            font-weight: 500;
+            font-size: 22px;
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+
+        .add-event-title input:focus{
+            border: none;
+            outline: none;
+        }
+
         .event-prop-line {
             display: -webkit-flex;
             display: -ms-flex;
@@ -209,8 +224,8 @@ height: 100%">
 
         .event-type-image {
             margin: 0 auto;
-            width: 26px;
-            height: 26px;
+            width: 40px;
+            height: 40px;
             display: -webkit-flex;
             display: -ms-flex;
             display: flex;
@@ -236,7 +251,7 @@ height: 100%">
 
         .time-date-dim-start,
         .time-date-dim-end {
-            width: fit-content;
+            padding: 3px;
             font-style: normal;
             font-weight: normal;
             font-size: 12px;
@@ -244,13 +259,14 @@ height: 100%">
             color: #F9FFF5;
             background: #4E9A5F;
             border-radius: 2px;
-            padding: 0 3px;
+            //padding: 0 3px;
         }
 
         .time-date-dim-reset {
+            padding: 5px;
             text-align: center;
-            width: 18px;
-            height: 14px;
+            //width: 18px;
+            //height: 14px;
             line-height: 14px;
             border: 1px solid #353535;
             box-sizing: border-box;
@@ -277,6 +293,7 @@ height: 100%">
         }
 
         .event-description-holder textarea {
+            font-size: 16px;
             background: #FFFFFF;
             border: 1px solid #4E9A5F;
             box-sizing: border-box;
@@ -309,10 +326,9 @@ height: 100%">
         .aquired-time-unit,
         .event-place-unit {
             margin-right: 8px;
-            height: 16px;
-            line-height: 14px;
+            line-height: 16px;
             color: #353535;
-            padding: 0 3px;
+            padding: 3px;
             width: fit-content;
             border-radius: 2px;
             -webkit-border-radius: 2px;
@@ -327,8 +343,9 @@ height: 100%">
         }
 
         .aquired-time-unit-add {
-            height: 16px;
-            width: 16px;
+            padding: 3px 6px;
+            //height: 16px;
+            //width: 16px;
             text-align: center;
             font-size: 14px;
             line-height: 14px;
